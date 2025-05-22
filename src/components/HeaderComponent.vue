@@ -6,13 +6,13 @@
     <nav>
       <ul class="nav-list">
         <li>
-          <a class="link" href="#">Home</a>
+          <RouterLink class="link" to="/">Home</RouterLink>
         </li>
         <li>
-          <a class="link" href="#">Blog</a>
+          <RouterLink class="link" to="/products">Products</RouterLink>
         </li>
         <li>
-          <a class="link" href="#">Contact</a>
+          <RouterLink class="link" to="/basics">Vue Basics</RouterLink>
         </li>
       </ul>
     </nav>
