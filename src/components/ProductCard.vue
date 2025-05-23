@@ -1,7 +1,11 @@
 <script setup>
+import { useProductStore } from '../stores/product';
+
 defineProps({
   product: Object
 })
+
+const productStore = useProductStore();
 </script>
 
 <template>
@@ -9,6 +13,7 @@ defineProps({
     <h3>{{ product.name }}</h3>
     <img :src="product.img" alt="Product Image" height="100">
     <h4>{{ product.price }}€</h4>
+    <button @click="productStore.deleteProduct(product.id)">Eliminar</button>
   </article>
 </template>
 
